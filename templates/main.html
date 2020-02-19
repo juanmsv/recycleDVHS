@@ -1,52 +1,5 @@
-<html>
-    <head>
-        <style>
-        body {
-            background-color: #66ff66;
-        }
-        #miss {
-            height: 200px;
-            width: 20%;
-        }
-        ol {
-            list-style-type: none;
-            margin: 10;
-            padding: 10;
-            overflow: hidden;
-            background-color: #009933
-;
-        }
-        ul {
-            list-style-type: none;
-            margin: 10;
-            padding: 10;
-            overflow: hidden;
-        }
-        #links{
-            background-color: white;
-        }
-        li {
-           float: left;
-            margin: 10;
-            padding: 10;
-        }
-        #state {
-            margin: 10;
-            padding: 10;
-            font-size: 25px;
-        }
-        </style>
-        <title>RECYCLE-DVHS</title>
-    </head>
-    <body>
-        <h1 style="text-align:center;">Del Valle High School Recycle initiative</h1>
-        <div id="nav">
-            <ol>
-                <li><a href="/">Home</a></li>
-                <li>About Us</li>
-                <li>Petition</li>
-            </ol>
-        </div>
+{% extends 'base.html' %}
+{% block container %}
         <div id="miss" height="200" width="250">
             <h3 style="text-align:center;">Mission Statement</h3>
             <p id="state">
@@ -68,5 +21,4 @@
                 <li></li>
             </ul>
         </div>
-    </body>
-</html>
+{% endblock %}
